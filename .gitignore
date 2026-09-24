@@ -1,0 +1,19 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies & build output
+node_modules/
+dist/
+target/
+
+# Visual Paradigm backups & Office temp files
+*.vpp.bak_*
+*(AutoRecovered)*
+~$*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
