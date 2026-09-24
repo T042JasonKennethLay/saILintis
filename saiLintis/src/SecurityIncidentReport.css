@@ -1,0 +1,66 @@
+.sir-tabs-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--gray-light);
+  padding-bottom: 10px;
+}
+
+.sir-tab-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.sir-tab-icon {
+  margin-right: 6px;
+}
+
+.sir-success-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.sir-success-banner i {
+  color: #0f5132;
+}
+
+.sir-destination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #f8f9fa;
+  border: 1px solid var(--gray-light);
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.sir-dest-label {
+  margin-right: 6px;
+  color: #495057;
+}
+
+.sir-dest-path {
+  font-family: monospace;
+  color: #212529;
+}
+
+.sir-dest-btn {
+  background: none;
+  border: none;
+  color: var(--blue);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 0;
+}

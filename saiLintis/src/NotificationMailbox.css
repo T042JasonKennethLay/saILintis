@@ -1,0 +1,226 @@
+.nmb-root {
+  position: relative;
+}
+
+.nmb-trigger {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--gray-light);
+  border-radius: 8px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.nmb-trigger:hover {
+  border-color: rgba(37, 99, 235, 0.3);
+  color: var(--blue);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.nmb-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  background: #ef4444;
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  border: 2px solid white;
+  line-height: 1;
+}
+
+.nmb-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 360px;
+  background: white;
+  border: 1px solid var(--gray-light);
+  border-radius: var(--radius);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+  z-index: 9999;
+  overflow: hidden;
+  animation: nmb-slide-in 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes nmb-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nmb-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--gray-light);
+  background: #f8fafc;
+}
+
+.nmb-panel-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nmb-panel-title i {
+  color: var(--blue);
+}
+
+.nmb-mark-all-btn {
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue);
+  cursor: pointer;
+  font-family: var(--font-main);
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.nmb-mark-all-btn:hover {
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.nmb-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.nmb-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 40px 20px;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nmb-empty i {
+  font-size: 28px;
+  color: #cbd5e1;
+}
+
+.nmb-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--gray-light);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.nmb-item:last-child {
+  border-bottom: none;
+}
+
+.nmb-item.nmb-unread {
+  background: rgba(37, 99, 235, 0.03);
+}
+
+.nmb-item.nmb-unread:hover {
+  background: rgba(37, 99, 235, 0.07);
+}
+
+.nmb-item.nmb-read {
+  background: white;
+  cursor: default;
+}
+
+.nmb-item.nmb-read:hover {
+  background: #f8fafc;
+}
+
+.nmb-item-dot-col {
+  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  flex-shrink: 0;
+}
+
+.nmb-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--blue);
+  flex-shrink: 0;
+}
+
+.nmb-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.nmb-item-msg {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 4px 0;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.nmb-item.nmb-unread .nmb-item-msg {
+  font-weight: 700;
+}
+
+.nmb-item.nmb-read .nmb-item-msg {
+  color: #64748b;
+}
+
+.nmb-item-meta {
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.nmb-chat-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--blue);
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}

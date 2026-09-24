@@ -1,0 +1,341 @@
+.rir-success-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.rir-success-banner i {
+  color: #0f5132;
+}
+
+.rir-destination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #f8f9fa;
+  border: 1px solid var(--gray-light);
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.rir-dest-label {
+  margin-right: 6px;
+  color: #495057;
+}
+
+.rir-dest-path {
+  font-family: monospace;
+  color: #212529;
+}
+
+.rir-dest-btn {
+  background: none;
+  border: none;
+  color: var(--blue);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.rir-status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 99px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rir-status-open,
+.rir-status-pending {
+  background: hsl(45, 95%, 90%);
+  color: hsl(45, 95%, 25%);
+  border: 1px solid hsl(45, 95%, 80%);
+}
+
+.rir-status-reviewed {
+  background: hsl(145, 75%, 90%);
+  color: hsl(145, 75%, 20%);
+  border: 1px solid hsl(145, 75%, 80%);
+}
+
+.rir-status-closed-reviewed,
+.rir-status-closed {
+  background: hsl(210, 10%, 90%);
+  color: hsl(210, 10%, 35%);
+  border: 1px solid hsl(210, 10%, 80%);
+}
+
+.rir-status-escalated-action-pending {
+  background: hsl(355, 85%, 93%);
+  color: hsl(355, 85%, 35%);
+  border: 1px solid hsl(355, 85%, 85%);
+}
+
+.rir-status-emergency-broadcasted {
+  background: hsl(25, 95%, 93%);
+  color: hsl(25, 95%, 35%);
+  border: 1px solid hsl(25, 95%, 85%);
+}
+
+.rir-status-evacuation-authorized {
+  background: hsl(350, 95%, 93%);
+  color: hsl(350, 95%, 35%);
+  border: 1px solid hsl(350, 95%, 85%);
+}
+
+.rir-status-route-alteration-authorized {
+  background: hsl(210, 95%, 93%);
+  color: hsl(210, 95%, 35%);
+  border: 1px solid hsl(210, 95%, 85%);
+}
+
+.rir-card-status-row {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.rir-card-status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.rir-card-status-open,
+.rir-card-status-pending {
+  background: hsl(45, 95%, 90%);
+  color: hsl(45, 95%, 30%);
+}
+
+.rir-card-status-reviewed {
+  background: hsl(145, 75%, 90%);
+  color: hsl(145, 75%, 25%);
+}
+
+.rir-card-status-closed-reviewed,
+.rir-card-status-closed {
+  background: hsl(210, 10%, 90%);
+  color: hsl(210, 10%, 40%);
+}
+
+.rir-card-status-escalated-action-pending {
+  background: hsl(355, 85%, 93%);
+  color: hsl(355, 85%, 40%);
+}
+
+.rir-card-status-emergency-broadcasted {
+  background: hsl(25, 95%, 90%);
+  color: hsl(25, 95%, 35%);
+}
+
+.rir-card-status-evacuation-authorized {
+  background: hsl(350, 95%, 90%);
+  color: hsl(350, 95%, 35%);
+}
+
+.rir-card-status-route-alteration-authorized {
+  background: hsl(210, 95%, 90%);
+  color: hsl(210, 95%, 35%);
+}
+
+.rir-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.rir-modal-container {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 16px;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.15);
+  position: relative;
+  text-align: center;
+  color: #0f172a;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.rir-modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(15, 23, 42, 0.05);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  color: #475569;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.rir-modal-close-btn:hover {
+  background: rgba(15, 23, 42, 0.1);
+  color: #0f172a;
+  transform: rotate(90deg);
+}
+
+.rir-modal-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rir-modal-description {
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.rir-modal-options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rir-modal-option-card {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  color: inherit;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.rir-modal-option-card:hover {
+  background: #ffffff;
+  border-color: rgba(37, 99, 235, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.05);
+}
+
+.rir-modal-option-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.rir-modal-option-card:nth-child(1):hover::before {
+  background: hsl(25, 95%, 60%);
+}
+.rir-modal-option-card:nth-child(2):hover::before {
+  background: hsl(350, 95%, 60%);
+}
+.rir-modal-option-card:nth-child(3):hover::before {
+  background: hsl(210, 95%, 60%);
+}
+
+.rir-option-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.rir-icon-broadcast {
+  background: rgba(249, 115, 22, 0.1);
+  color: #f97316;
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.rir-icon-evac {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.rir-icon-route {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.rir-option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rir-option-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.rir-option-subtitle {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+}
+
+.rir-option-desc {
+  font-size: 13px;
+  color: #475569;
+  margin: 0;
+}

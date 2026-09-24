@@ -1,0 +1,237 @@
+.st-destination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #f8f9fa;
+  border: 1px solid var(--gray-light);
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.st-dest-label {
+  margin-right: 6px;
+  color: #495057;
+}
+
+.st-dest-path {
+  font-family: monospace;
+  color: #212529;
+}
+
+.st-dest-btn {
+  background: none;
+  border: none;
+  color: var(--blue);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.ps-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11000;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.ps-modal-card {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--gray-light);
+  font-family: var(--font-main);
+}
+
+.ps-modal-header {
+  background: white;
+  padding: 24px 28px 16px 28px;
+  border-bottom: 1px solid var(--gray-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ps-modal-subtitle {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #64748b;
+  display: block;
+}
+
+.ps-modal-title {
+  margin: 4px 0 0 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.ps-modal-close-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.ps-modal-close-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--ink);
+}
+
+.ps-modal-body {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.ps-modal-detail-card {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 16px 20px;
+  border: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ps-detail-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ps-detail-title {
+  margin: 4px 0 0 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.ps-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 14px;
+}
+
+.ps-detail-grid-label {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ps-detail-amount {
+  font-size: 20px;
+  color: #ef4444;
+  font-weight: 800;
+}
+
+.ps-detail-date {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  display: block;
+  margin-top: 4px;
+}
+
+.ps-warning-box {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 13px;
+  color: #1e3a8a;
+  line-height: 1.5;
+}
+
+.ps-warning-title {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.ps-modal-form-card {
+  background: white;
+  border: none;
+  padding: 0;
+}
+
+.ps-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ps-form-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.ps-form-desc {
+  margin: 4px 0 16px 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.ps-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-light);
+  font-size: 14px;
+  font-family: var(--font-main);
+  resize: none;
+  outline: none;
+  background-color: var(--bg);
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.ps-textarea:focus {
+  border-color: var(--blue);
+}
+
+.ps-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid var(--gray-light);
+  padding-top: 20px;
+  margin-top: 8px;
+}

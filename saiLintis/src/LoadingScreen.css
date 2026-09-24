@@ -1,0 +1,15 @@
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  backdrop-filter: blur(4px);
+}
+
+.loading-dots-container {
+  display: flex;
+  gap: 12px;
+}

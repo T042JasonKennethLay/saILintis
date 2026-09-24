@@ -1,0 +1,189 @@
+.hr-tabs-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--gray-light);
+  padding-bottom: 10px;
+}
+
+.hr-tab-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hr-tab-icon {
+  margin-right: 6px;
+}
+
+.hr-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.hr-candidate-link {
+  background: none;
+  border: none;
+  color: var(--blue);
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.hr-empty-cell {
+  text-align: center;
+  padding: 30px;
+}
+
+.hr-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.hr-grid.split {
+  grid-template-columns: 1fr 1fr;
+}
+
+.hr-filter-row {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.hr-candidate-row {
+  cursor: pointer;
+}
+
+.hr-candidate-row.selected td {
+  background: #f1f3f5;
+}
+
+.hr-preview-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--gray-light);
+}
+
+.hr-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray-light);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.hr-preview-title {
+  margin: 0;
+}
+
+.hr-close-btn {
+  padding: 4px 8px;
+}
+
+.hr-profile-meta {
+  margin-bottom: 16px;
+}
+
+.hr-profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.hr-profile-email {
+  color: #495057;
+  font-size: 14px;
+}
+
+.hr-profile-job {
+  color: #495057;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.hr-profile-status-row {
+  margin-top: 4px;
+}
+
+.hr-profile-assigned-row {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.hr-cv-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid var(--gray-light);
+  padding: 14px;
+  overflow-y: auto;
+  min-height: 220px;
+  max-height: 400px;
+}
+
+.hr-cv-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #495057;
+}
+
+.hr-cv-pdf-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.hr-cv-iframe {
+  border: none;
+  flex: 1;
+  min-height: 300px;
+}
+
+.hr-cv-download-btn {
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+.hr-cv-pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 14px;
+  color: #212529;
+}
+
+.hr-action-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hr-flex1 {
+  flex: 1;
+}
+
+.hr-modal-max-width {
+  max-width: 600px;
+}
+
+.hr-modal-body-scroll {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.hr-field-row {
+  margin-bottom: 14px;
+}
+
+.hr-textarea {
+  resize: vertical;
+}
