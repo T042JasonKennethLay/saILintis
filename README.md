@@ -30,7 +30,3 @@ a **React + TypeScript** frontend and a **Rust** backend on **PostgreSQL**.
 ## 📐 Diagrams
 The `Diagram/` folder holds the analysis and design docs, made in Visual Paradigm:
 use case descriptions (Satzinger format), actiams, and the class diagram.
-# create a .env file with: DATABASE_URL, REDIS SMTP_PASSWORD
-npm run tauri dev
-
-Prerequisites: Node.js, Rust toolchain, PostgreSQL, Redis
